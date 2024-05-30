@@ -45,7 +45,7 @@
         <!-- List of episodes -->
         <div class="grid grid-cols-3 gap-4">
           <div v-for="episode in episodes" :key="episode.id" class="bg-gray-800 p-4 rounded-lg shadow">
-            <router-link :to="{ name: 'episode', params: { id: episode.id } }" class="block">
+            <router-link :to="{ name: 'episode-detail', params: { id: episode.id } }" class="block">
               <p class="font-semibold">{{ episode.name }}</p>
               <p class="text-sm">{{ episode.air_date }}</p>
               <p class="text-sm">{{ episode.episode }}</p>
@@ -60,7 +60,7 @@
         <!-- List of characters -->
         <div class="grid grid-cols-3 gap-4">
           <div v-for="character in characters" :key="character.id" class="Characters">
-            <router-link :to="{ name: 'character', params: { id: character.id } }">
+            <router-link :to="{ name: 'character-detail', params: { id: character.id } }">
               <!-- Add inline style for yellow shadow -->
               <img :src="character.image" alt="" class="character-image" style="box-shadow: 0 4px 6px rgba(255, 255, 0, 0.5);">
               <p>{{ character.name }}</p>
@@ -75,7 +75,7 @@
         <!-- List of locations -->
         <div class="grid grid-cols-3 gap-4">
           <div v-for="location in locations" :key="location.id" class="bg-gray-800 p-4 rounded-lg shadow">
-            <router-link :to="{ name: 'location', params: { id: location.id } }" class="block">
+            <router-link :to="{ name: 'location-detail', params: { id: location.id } }" class="block">
               <p class="font-semibold">{{ location.name }}</p>
               <p class="text-sm">{{ location.dimension }}</p>
               <p class="text-sm">{{ location.type }}</p>
@@ -85,8 +85,6 @@
       </div>
     </div>
   </div>
-
-
 
   <!-- Footer -->
   <footer class="footer bg-black text-white p-4 fixed bottom-0 left-0 w-full">
