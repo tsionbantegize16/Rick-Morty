@@ -87,9 +87,25 @@
   </div>
 
   <!-- Footer -->
-  <footer class="footer bg-black text-white p-4 fixed bottom-0 left-0 w-full">
-    <p>&copy; 2024 Rick and Morty</p>
-  </footer>
+  <footer class="bg-[#1e1e1e] p-16 text-center border-t border-gray-700">
+      <div class="text-white">
+        <p class="text-2xl font-bold mb-6">Tsion Bantegize</p>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-x-8 md:space-y-0">
+          <p class="text-gray-400 text-lg flex items-center">
+            <svg class="w-6 h-6 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            </svg>
+            GitHub account: <a href="https://github.com/tsionbantegize16/Rick-and-Morty.git" class="text-red-500 hover:underline ml-1">View Git hub</a>
+          </p>
+          <p class="text-gray-400 text-lg flex items-center">
+            <svg class="w-6 h-6 text-red-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.85 17.6a2.7 2.7 0 01-.7-.5L3 14.95l1.35-1.35a6 6 0 015.3-1.55M12 12v.01M12 3l9.6 9.6a2 2 0 010 2.83L12 24l-1.35-1.35"></path>
+            </svg>
+            Figma Design: <a href="https://www.figma.com/design/giRn2ZSj86xEkMPBw0ngUD/Untitled?node-id=0-1&t=vkhVEKkdbdJAkgbo-1" class="text-red-500 hover:underline ml-1">View Design</a>
+          </p>
+        </div>
+      </div>
+    </footer>
 </template>
 
 <script setup>
