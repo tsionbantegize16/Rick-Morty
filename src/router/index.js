@@ -1,4 +1,3 @@
-// src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
 import Characters from '../components/Characters.vue';
 import Episode from '../components/Episode.vue';
